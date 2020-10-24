@@ -7,7 +7,7 @@ const Footer = ({
   className,
   ...restProps
 }) => {
-  const classes = cx('p-4 border-t border-gray-400', className)
+  const classes = cx('p-4 border-t first:border-t-0 border-gray-400', className)
 
   return (
     <div className={classes} {...restProps}>

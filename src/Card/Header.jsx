@@ -7,7 +7,7 @@ const Header = ({
   className,
   ...restProps
 }) => {
-  const classes = cx('p-4 border-b border-gray-400', className)
+  const classes = cx('p-4 border-b last:border-b-0 border-gray-400', className)
 
   return (
     <div className={classes} {...restProps}>
