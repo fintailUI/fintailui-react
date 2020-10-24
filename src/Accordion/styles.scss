@@ -1,0 +1,9 @@
+.ft-accordion {
+  max-height: 0vh;
+  transition: all .35s;
+  overflow: hidden;
+
+  &.open {
+    max-height: 100vh;
+  }
+}
