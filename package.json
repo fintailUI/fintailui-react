@@ -58,7 +58,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "storybook-addon-react-docgen": "^1.2.42"
   },
   "files": [
     "dist"

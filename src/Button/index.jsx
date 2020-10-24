@@ -77,19 +77,31 @@ const Button = ({
 }
 
 Button.propTypes = {
-  /** Button color ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', all tailwindcss colors] */
+  /** 
+    Button color ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', all tailwindcss colors] 
+  */
   color: PropTypes.string,
-  /** Button size */
+  /** 
+    Button size 
+  */
   size: PropTypes.oneOf(['xl', 'lg', 'md', 'sm', 'xs']),
-  /** Outline button */
+  /** 
+   Outline button 
+  */
   outline: PropTypes.bool,
-  /** Rounded button */
+  /** 
+    Rounded button 
+  */
   rounded: PropTypes.bool,
-  /** Disabled button */
+  /** 
+    Disabled button 
+  */
   disabled: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.node,
-  /** Link button */
+  /** 
+    Link button 
+  */
   href: PropTypes.string,
 }
 

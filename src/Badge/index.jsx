@@ -15,9 +15,9 @@ const colorMapper = (color) => {
 
   switch (currentColor) {
     case 'primary': 
-      return `bg-indigo-300 text-indigo-800`
+      return 'bg-indigo-600 text-white'
     case 'secondary': 
-      return `bg-indigo-100 text-indigo-600`
+      return 'bg-indigo-300 text-indigo-600'
     case 'light':
       return `bg-gray-100 text-gray-600`
     case 'dark':
@@ -27,17 +27,17 @@ const colorMapper = (color) => {
   return `bg-${currentColor}-300 text-${currentColor}-800`
 }
 
-const Alert = ({
+const Badge = ({
   children,
-  className,
   color,
+  rounded,
 }) => {
-  const alertColor = colorMapper(color)
+  const badgeColor = colorMapper(color)
 
   const finalClassName = cx(
-    'rounded-lg p-4 mb-4',
-    alertColor,
-    className
+    'px-2 text-sm font-semibold inline-block w-auto',
+    rounded ? 'rounded-full' : 'rounded',
+    badgeColor,
   )
 
   return (
@@ -47,15 +47,17 @@ const Alert = ({
   )
 }
 
-Alert.propTypes = {
+Badge.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
+  /** Badge color ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', all tailwindcss colors] */
   color: PropTypes.string,
+  /** Rounded badge */
+  rounded: PropTypes.bool,
 }
 
-Alert.defaultProps= {
-  /** Alert color ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', all tailwindcss colors] */
-  color: 'primary'
+Badge.defaultProps = {
+  color: 'primary',
+  rounded: false,
 }
 
-export default Alert
+export default Badge
