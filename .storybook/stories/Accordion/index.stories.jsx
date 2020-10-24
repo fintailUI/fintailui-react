@@ -16,7 +16,6 @@ export const Default = () => {
       <Accordion open={open}>
         <Card.Body>Card with header and footer</Card.Body>
       </Accordion>
-      <Card.Footer>My footer</Card.Footer>
     </Card>
   )
 }
