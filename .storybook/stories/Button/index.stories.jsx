@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../../src';
+import { Button } from '../../../dist';
 
 export default {
   title: 'Buttons',

@@ -5,18 +5,20 @@ import cx from 'classnames'
 const Footer = ({
   children,
   className,
+  ...restProps
 }) => {
   const classes = cx('p-4 border-t border-gray-400', className)
 
   return (
-    <div className={classes}>
+    <div className={classes} {...restProps}>
       {children}
     </div>
   )
 }
 
 Footer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string
 }
 
 export default Footer
