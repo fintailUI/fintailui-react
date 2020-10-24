@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '../../../dist';
 
 export default {
-  title: 'Buttons',
+  title: 'Button',
   component: Button,
 };
 
