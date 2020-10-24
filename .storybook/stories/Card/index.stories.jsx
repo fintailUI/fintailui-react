@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card } from '../../../src';
+import { Card } from '../../../dist';
 
 export default {
   title: 'Cards',
