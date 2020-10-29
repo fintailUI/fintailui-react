@@ -35,6 +35,10 @@ export const Colors = () => (
     </Button>
   </div>
 )
+Colors.args = {
+  color: '',
+};
+
 
 export const Sizes = () => (
   <div className="flex items-end">
