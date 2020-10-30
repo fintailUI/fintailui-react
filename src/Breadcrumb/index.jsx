@@ -15,11 +15,11 @@ const Breadcrumb = ({
 
   return (
     <nav className={finalClassName}>
-      <ol className="list-reset flex text-gray-600">
+      <ol className="list-reset flex items-center text-gray-600">
         {children && children.map((child, index) => (
           <Fragment>
-            <li key={index}>{child}</li>
-            {index !== children.length - 1 && <li className="mx-2">{separator}</li>}
+            <li className="m-0" key={index}>{child}</li>
+            {index !== children.length - 1 && <li className="mx-2 my-0">{separator}</li>}
           </Fragment>
         ))}
       </ol>
